@@ -7,57 +7,188 @@ public class Dia3 {
     public static void main(String[] args) {
         
         int opcion;
-        do {
-            System.out.println("\n--- MENÚ ---");
-            System.out.println("1. Números Naturales Anverso");
-            System.out.println("2. Números Naturales Reverso");
-            System.out.println("3. Tablas de Multiplicar");
-            System.out.println("4. Tablas de Multiplicar Inverso");
-            System.out.println("5. Alfabeto");
-            System.out.println("6. Números Pares e Impares");
-            System.out.println("7. Suma de Números Naturales");
-            System.out.println("8. Suma de Números Pares");
-            System.out.println("9. Suma de Números Impares");
-            System.out.println("10. Valores ASCII");
-            System.out.println("11. Factorial");
-            System.out.println("12. Exponente");
-            System.out.println("13. Invertir Dígitos");
-            System.out.println("14. Sumar Dígitos");
-            System.out.println("15. Verificar Número Primo");
-            System.out.println("16. MCD (Máximo Común Divisor)");
-            System.out.println("17. Contar Positivos, Negativos y Ceros");
-            System.out.println("18. Número Mayor y Menor");
-            System.out.println("18. Suma de números entre 100 y 200 divisibles entre 9");
-            System.out.println("0. Salir");
 
-            System.out.print("Elige una opción: ");
+        do {
+            System.out.println("\n--- MENÚ DE PROGRAMAS ---");
+            System.out.println("1. Imprimir números naturales del 1 al n");
+            System.out.println("2. Imprimir números naturales en orden inverso");
+            System.out.println("3. Imprimir tablas de multiplicar");
+            System.out.println("4. Imprimir tablas de multiplicar en orden inverso");
+            System.out.println("5. Imprimir alfabeto");
+            System.out.println("6. Imprimir números pares e impares");
+            System.out.println("7. Suma de números naturales entre 1 y n");
+            System.out.println("8. Suma de números pares entre 1 y n");
+            System.out.println("9. Suma de números impares entre 1 y n");
+            System.out.println("10. Imprimir valores ASCII");
+            System.out.println("11. Calcular factorial de un número");
+            System.out.println("12. Calcular exponente de un número");
+            System.out.println("13. Invertir dígitos de un número");
+            System.out.println("14. Sumar dígitos de un número");
+            System.out.println("15. Verificar si un número es primo");
+            System.out.println("16. Calcular MCD de dos números");
+            System.out.println("17. Contar números positivos, negativos y ceros");
+            System.out.println("18. Encontrar el número más grande y más pequeño");
+            System.out.println("19. Números divisibles por 9 entre 100 y 200");
+            System.out.println("20. Verificar si un número es fuerte");
+            System.out.println("21. Convertir hexadecimal a decimal");
+            System.out.println("22. Convertir hexadecimal a octal");
+            System.out.println("23. Convertir hexadecimal a binario");
+            System.out.println("24. Convertir decimal a hexadecimal");
+            System.out.println("25. Convertir decimal a octal");
+            System.out.println("26. Convertir decimal a binario");
+            System.out.println("27. Convertir binario a octal");
+            System.out.println("28. Convertir binario a decimal");
+            System.out.println("29. Convertir binario a hexadecimal");
+            System.out.println("30. Convertir octal a binario");
+            System.out.println("31. Convertir octal a decimal");
+            System.out.println("32. Convertir octal a hexadecimal");
+            System.out.println("33. Complemento a 1 de un número binario");
+            System.out.println("34. Complemento a 2 de un número binario");
+            System.out.println("35. Generar secuencia de Fibonacci");
+            System.out.println("36. Imprimir números fuertes del 1 al 100000");
+            System.out.println("37. Imprimir números perfectos del 1 al 10000");
+            System.out.println("38. Verificar si un número es perfecto");
+            System.out.println("39. Imprimir números de Armstrong del 1 al 1000");
+            System.out.println("40. Verificar si un número es de Armstrong");
+            System.out.println("41. Imprimir factores primos de un número");
+            System.out.println("0. Salir");
+            System.out.print("Selecciona una opción: ");
             opcion = sc.nextInt();
 
             switch (opcion) {
-                case 1 -> nAnverso();
-                case 2 -> nReverso();
-                case 3 -> tablasMultiplicar();
-                case 4 -> tablasMultiplicarInverso();
-                case 5 -> alfabeto();
-                case 6 -> parImpar();
-                case 7 -> sumaNatural();
-                case 8 -> sumaPar();
-                case 9 -> sumaImpar();
-                case 10 -> ascii();
-                case 11 -> factorial();
-                case 12 -> exponente();
-                case 13 -> invertirDigito();
-                case 14 -> sumarDigito();
-                case 15 -> nPrimo();
-                case 16 -> mcd();
-                case 17 -> numerosInfinitos();
-                case 18 -> lowerN();
-                case 19 -> divisible9();
-                case 0 -> System.out.println("Saliendo del programa...");
-                default -> System.out.println("Opción no válida. Intenta de nuevo.");
+                case 1:
+                    nAnverso();
+                    break;
+                case 2:
+                    nReverso();
+                    break;
+                case 3:
+                    tablasMultiplicar();
+                    break;
+                case 4:
+                    tablasMultiplicarInverso();
+                    break;
+                case 5:
+                    alfabeto();
+                    break;
+                case 6:
+                    parImpar();
+                    break;
+                case 7:
+                    sumaNatural();
+                    break;
+                case 8:
+                    sumaPar();
+                    break;
+                case 9:
+                    sumaImpar();
+                    break;
+                case 10:
+                    ascii();
+                    break;
+                case 11:
+                    factorial();
+                    break;
+                case 12:
+                    exponente();
+                    break;
+                case 13:
+                    invertirDigito();
+                    break;
+                case 14:
+                    sumarDigito();
+                    break;
+                case 15:
+                    nPrimo();
+                    break;
+                case 16:
+                    mcd();
+                    break;
+                case 17:
+                    numerosInfinitos();
+                    break;
+                case 18:
+                    lowerN();
+                    break;
+                case 19:
+                    divisible9();
+                    break;
+                case 20:
+                    numeroFuerte();
+                    break;
+                case 21:
+                    hexadecimalADecimal();
+                    break;
+                case 22:
+                    hexadecimalAOctal();
+                    break;
+                case 23:
+                    hexadecimalABinario();
+                    break;
+                case 24:
+                    decimalAHexadecimal();
+                    break;
+                case 25:
+                    decimalAOctal();
+                    break;
+                case 26:
+                    decimalABinario();
+                    break;
+                case 27:
+                    binarioAOctal();
+                    break;
+                case 28:
+                    binarioADecimal();
+                    break;
+                case 29:
+                    binarioAHexadecimal();
+                    break;
+                case 30:
+                    octalABinario();
+                    break;
+                case 31:
+                    octalADecimal();
+                    break;
+                case 32:
+                    octalAHexadecimal();
+                    break;
+                case 33:
+                    complementoA1();
+                    break;
+                case 34:
+                    complementoA2();
+                    break;
+                case 35:
+                    fibonacci();
+                    break;
+                case 36:
+                    nFuerteMil();
+                    break;
+                case 37:
+                    imprimirNumerosPerfectos();
+                    break;
+                case 38:
+                    verificarNumeroPerfecto();
+                    break;
+                case 39:
+                    imprimirNumerosArmstrong();
+                    break;
+                case 40:
+                    verificarNumeroArmstrong();
+                    break;
+                case 41:
+                    imprimirFactoresPrimos();
+                    break;
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Intenta de nuevo.");
             }
-
         } while (opcion != 0);
+
+        sc.close(); // Cerrar el Scanner al finalizar
+        
     }
     
     static void nAnverso() {
@@ -385,21 +516,6 @@ public class Dia3 {
         System.out.print("El resultado es: " + suma);
     }
 
-    static void binarioADecimal() {
-        System.out.print("Ingresa un número binario: ");
-        int binario = sc.nextInt();
-        int decimal = 0, potencia = 1;
-
-        while (binario > 0) {
-            int digito = binario % 10;
-            decimal += digito * potencia;
-            potencia *= 2;
-            binario /= 10;
-        }
-
-        System.out.println("El valor decimal es: " + decimal);
-    }
-
     static void numeroFuerte() {
         System.out.print("Ingresa un número entero: ");
         int n = sc.nextInt();
@@ -474,5 +590,202 @@ public class Dia3 {
         int decimal = Integer.parseInt(binario, 2);
         String octal = Integer.toOctalString(decimal);
         System.out.println("El valor octal es: " + octal);
+    }
+    
+    static void binarioADecimal() {
+
+        System.out.print("Introduce un número binario: ");
+        String binario = sc.next();
+
+        int decimal = Integer.parseInt(binario, 2);
+        System.out.println("El número decimal es: " + decimal);
+    }
+
+    static void binarioAHexadecimal() {
+
+        System.out.print("Introduce un número binario: ");
+        String binario = sc.next();
+
+        int decimal = Integer.parseInt(binario, 2);
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+        System.out.println("El número hexadecimal es: " + hexadecimal);
+    }
+
+    static void octalABinario() {
+
+        System.out.print("Introduce un número octal: ");
+        String octal = sc.next();
+
+        int decimal = Integer.parseInt(octal, 8);
+        String binario = Integer.toBinaryString(decimal);
+        System.out.println("El número binario es: " + binario);
+    }
+
+    static void octalADecimal() {
+
+        System.out.print("Introduce un número octal: ");
+        String octal = sc.next();
+
+        int decimal = Integer.parseInt(octal, 8);
+        System.out.println("El número decimal es: " + decimal);
+    }
+
+    static void octalAHexadecimal() {
+
+        System.out.print("Introduce un número octal: ");
+        String octal = sc.next();
+
+        int decimal = Integer.parseInt(octal, 8);
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+        System.out.println("El número hexadecimal es: " + hexadecimal);
+    }
+
+    static void complementoA1() {
+
+        System.out.print("Introduce un número binario: ");
+        String binario = sc.next();
+
+        StringBuilder complemento = new StringBuilder();
+        for (char c : binario.toCharArray()) {
+            complemento.append((c == '0') ? '1' : '0');
+        }
+        System.out.println("El complemento a 1 es: " + complemento.toString());
+    }
+
+    static void complementoA2() {
+
+        System.out.print("Introduce un número binario: ");
+        String binario = sc.next();
+
+        StringBuilder complemento1 = new StringBuilder();
+        for (char c : binario.toCharArray()) {
+            complemento1.append((c == '0') ? '1' : '0');
+        }
+
+        String complemento2 = Integer.toBinaryString(Integer.parseInt(complemento1.toString(), 2) + 1);
+        System.out.println("El complemento a 2 es: " + complemento2);
+    }
+    
+    static void fibonacci() {
+        
+        System.out.print("Por favor, ingrese un valor entero (representando hasta qué término de la secuencia se generará: ");
+        int n = sc.nextInt();
+        
+        int a = 0;
+        int b = 1;
+
+        while(a < n) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }      
+    }
+    
+    static void nFuerteMil() {
+        System.out.println("Números Fuertes del 1 al 100000:");
+
+        for (int i = 1; i <= 100000; i++) {
+            int sumaFactoriales = 0;
+            int original = i;
+            int n = i;
+
+            while (n != 0) {
+                int digito = n % 10;
+
+                // Calcular el factorial del dígito
+                int fact = 1;
+                for (int j = 1; j <= digito; j++) {
+                    fact *= j;
+                }
+
+                sumaFactoriales += fact;
+                n /= 10;
+            }
+
+            if (sumaFactoriales == original) {
+                System.out.println(original);
+            }
+        }
+    }
+    
+    static void imprimirNumerosPerfectos() {
+        System.out.println("Números Perfectos entre 1 y 10000:");
+        for (int i = 1; i <= 10000; i++) {
+            if (esNumeroPerfecto(i)) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    static void verificarNumeroPerfecto() {
+
+        System.out.print("Introduce un número: ");
+        int numero = sc.nextInt();
+
+        if (esNumeroPerfecto(numero)) {
+            System.out.println(numero + " es un número perfecto.");
+        } else {
+            System.out.println(numero + " no es un número perfecto.");
+        }
+    }
+    
+    static void imprimirNumerosArmstrong() {
+        System.out.println("Números de Armstrong entre 1 y 1000:");
+        for (int i = 1; i <= 1000; i++) {
+            if (esNumeroArmstrong(i)) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    static void verificarNumeroArmstrong() {
+
+        System.out.print("Introduce un número: ");
+        int numero = sc.nextInt();
+
+        if (esNumeroArmstrong(numero)) {
+            System.out.println(numero + " es un número de Armstrong.");
+        } else {
+            System.out.println(numero + " no es un número de Armstrong.");
+        }
+    }
+
+    static void imprimirFactoresPrimos() {
+
+        System.out.print("Introduce un número: ");
+        int numero = sc.nextInt();
+
+        System.out.println("Factores primos de " + numero + ":");
+        for (int i = 2; i <= numero; i++) {
+            while (numero % i == 0) {
+                System.out.println(i);
+                numero /= i;
+            }
+        }
+    }
+    
+    static boolean esNumeroPerfecto(int numero) {
+        int suma = 0;
+        for (int i = 1; i < numero; i++) {
+            if (numero % i == 0) {
+                suma += i;
+            }
+        }
+        return suma == numero;
+    }
+
+    static boolean esNumeroArmstrong(int numero) {
+        int original = numero;
+        int suma = 0;
+        int digitos = String.valueOf(numero).length();
+
+        while (numero != 0) {
+            int digito = numero % 10;
+            suma += Math.pow(digito, digitos);
+            numero /= 10;
+        }
+
+        return suma == original;
     }
 }
