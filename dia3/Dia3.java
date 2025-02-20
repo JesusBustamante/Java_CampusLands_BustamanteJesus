@@ -27,6 +27,7 @@ public class Dia3 {
             System.out.println("16. MCD (Máximo Común Divisor)");
             System.out.println("17. Contar Positivos, Negativos y Ceros");
             System.out.println("18. Número Mayor y Menor");
+            System.out.println("18. Suma de números entre 100 y 200 divisibles entre 9");
             System.out.println("0. Salir");
 
             System.out.print("Elige una opción: ");
@@ -51,6 +52,7 @@ public class Dia3 {
                 case 16 -> mcd();
                 case 17 -> numerosInfinitos();
                 case 18 -> lowerN();
+                case 19 -> divisible9();
                 case 0 -> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opción no válida. Intenta de nuevo.");
             }
@@ -366,5 +368,20 @@ public class Dia3 {
             System.out.println("El número más grande es: " + maxi);
             System.out.println("El número más pequeño es: " + mini);
             
+    }
+
+    static void divisible9() {
+        // Escribe un programa para encontrar los números y la suma de todos los enteros entre 100 y 200 que sean
+        // divisibles por 9.
+        int suma = 0;
+
+        for(int i = 100; i <= 200; i++) {
+            if(i % 9 == 0) {
+                System.out.print(i + " + ");
+                suma += i;
+            }
+        }
+
+        System.out.print("El resultado es: " + suma);
     }
 }
