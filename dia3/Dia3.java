@@ -384,4 +384,95 @@ public class Dia3 {
 
         System.out.print("El resultado es: " + suma);
     }
+
+    static void binarioADecimal() {
+        System.out.print("Ingresa un número binario: ");
+        int binario = sc.nextInt();
+        int decimal = 0, potencia = 1;
+
+        while (binario > 0) {
+            int digito = binario % 10;
+            decimal += digito * potencia;
+            potencia *= 2;
+            binario /= 10;
+        }
+
+        System.out.println("El valor decimal es: " + decimal);
+    }
+
+    static void numeroFuerte() {
+        System.out.print("Ingresa un número entero: ");
+        int n = sc.nextInt();
+        int sumaFactoriales = 0, temp = n;
+
+        while (temp > 0) {
+            int digito = temp % 10;
+            int factorial = 1;
+
+            for (int i = 1; i <= digito; i++) {
+                factorial *= i;
+            }
+
+            sumaFactoriales += factorial;
+            temp /= 10;
+        }
+
+        if (sumaFactoriales == n) {
+            System.out.println(n + " es un número fuerte.");
+        } else {
+            System.out.println(n + " no es un número fuerte.");
+        }
+    }
+
+    static void hexadecimalADecimal() {
+        System.out.print("Ingresa un número hexadecimal: ");
+        String hexadecimal = sc.next();
+        int decimal = Integer.parseInt(hexadecimal, 16);
+        System.out.println("El valor decimal es: " + decimal);
+    }
+
+    static void hexadecimalAOctal() {
+        System.out.print("Ingresa un número hexadecimal: ");
+        String hexadecimal = sc.next();
+        int decimal = Integer.parseInt(hexadecimal, 16);
+        String octal = Integer.toOctalString(decimal);
+        System.out.println("El valor octal es: " + octal);
+    }
+
+    static void hexadecimalABinario() {
+        System.out.print("Ingresa un número hexadecimal: ");
+        String hexadecimal = sc.next();
+        int decimal = Integer.parseInt(hexadecimal, 16);
+        String binario = Integer.toBinaryString(decimal);
+        System.out.println("El valor binario es: " + binario);
+    }
+
+    static void decimalAHexadecimal() {
+        System.out.print("Ingresa un número decimal: ");
+        int decimal = sc.nextInt();
+        String hexadecimal = Integer.toHexString(decimal).toUpperCase();
+        System.out.println("El valor hexadecimal es: " + hexadecimal);
+    }
+
+    static void decimalAOctal() {
+        System.out.print("Ingresa un número decimal: ");
+        int decimal = sc.nextInt();
+        String octal = Integer.toOctalString(decimal);
+        System.out.println("El valor octal es: " + octal);
+    }
+
+    static void decimalABinario() {
+        System.out.print("Ingresa un número decimal: ");
+        int decimal = sc.nextInt();
+        String binario = Integer.toBinaryString(decimal);
+        System.out.println("El valor binario es: " + binario);
+    }
+
+    static void binarioAOctal() {
+        System.out.print("Ingresa un número binario: ");
+        String binario = sc.next();
+        int decimal = Integer.parseInt(binario, 2);
+        String octal = Integer.toOctalString(decimal);
+        System.out.println("El valor octal es: " + octal);
+    }
 }
