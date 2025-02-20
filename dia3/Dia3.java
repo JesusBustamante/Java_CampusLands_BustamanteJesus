@@ -6,8 +6,56 @@ public class Dia3 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         
-      lowerN();
-        
+        int opcion;
+        do {
+            System.out.println("\n--- MENÚ ---");
+            System.out.println("1. Números Naturales Anverso");
+            System.out.println("2. Números Naturales Reverso");
+            System.out.println("3. Tablas de Multiplicar");
+            System.out.println("4. Tablas de Multiplicar Inverso");
+            System.out.println("5. Alfabeto");
+            System.out.println("6. Números Pares e Impares");
+            System.out.println("7. Suma de Números Naturales");
+            System.out.println("8. Suma de Números Pares");
+            System.out.println("9. Suma de Números Impares");
+            System.out.println("10. Valores ASCII");
+            System.out.println("11. Factorial");
+            System.out.println("12. Exponente");
+            System.out.println("13. Invertir Dígitos");
+            System.out.println("14. Sumar Dígitos");
+            System.out.println("15. Verificar Número Primo");
+            System.out.println("16. MCD (Máximo Común Divisor)");
+            System.out.println("17. Contar Positivos, Negativos y Ceros");
+            System.out.println("18. Número Mayor y Menor");
+            System.out.println("0. Salir");
+
+            System.out.print("Elige una opción: ");
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1 -> nAnverso();
+                case 2 -> nReverso();
+                case 3 -> tablasMultiplicar();
+                case 4 -> tablasMultiplicarInverso();
+                case 5 -> alfabeto();
+                case 6 -> parImpar();
+                case 7 -> sumaNatural();
+                case 8 -> sumaPar();
+                case 9 -> sumaImpar();
+                case 10 -> ascii();
+                case 11 -> factorial();
+                case 12 -> exponente();
+                case 13 -> invertirDigito();
+                case 14 -> sumarDigito();
+                case 15 -> nPrimo();
+                case 16 -> mcd();
+                case 17 -> numerosInfinitos();
+                case 18 -> lowerN();
+                case 0 -> System.out.println("Saliendo del programa...");
+                default -> System.out.println("Opción no válida. Intenta de nuevo.");
+            }
+
+        } while (opcion != 0);
     }
     
     static void nAnverso() {
